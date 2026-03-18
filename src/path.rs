@@ -1282,8 +1282,8 @@ mod simple_tests {
             assert_eq!(rx.round(), 40.0);
             assert_eq!(ry.round(), 30.0);
             assert_eq!(x_axis_rotation.round(), 20.0);
-            assert_eq!(large_arc, true);
-            assert_eq!(sweep, true);
+            assert!(large_arc);
+            assert!(sweep);
             assert_eq!(x.round(), 150.0);
             assert_eq!(y.round(), 100.0);
         } else {
